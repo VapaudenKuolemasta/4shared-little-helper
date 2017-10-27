@@ -79,5 +79,7 @@
         });
     };
 
-    bar.insertBefore(div, addBtn);
+    if( document.querySelector("#navigationLinks.disabled") ){
+        bar.insertBefore(div, addBtn);
+    }
 })();
