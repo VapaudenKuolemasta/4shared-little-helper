@@ -55,15 +55,15 @@
                         onload: function (data) {
                             var json = JSON.parse(data.response);
 
-                            if(json.status === 'ok'){
+                            if (json.status === 'ok') {
                                 alert('Folder with name "' + dirName + '" was successfully added.');
                             }
 
-                            if(json.status === 'failed'){
+                            if (json.status === 'failed') {
                                 alert("Error!\n\n" + json.errors);
 
                                 // if already exists
-                                if(json.errorsCode === '0201'){
+                                if (json.errorsCode === '0201') {
                                     GM_xmlhttpRequest({
                                         method: "POST",
                                         url: 'https://www.4shared.com/web/accountActions/remove',
@@ -79,7 +79,7 @@
         });
     };
 
-    if( document.querySelector("#navigationLinks.disabled") ){
+    if (document.querySelector("#navigationLinks.disabled")) {
         bar.insertBefore(div, addBtn);
     }
 })();
