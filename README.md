@@ -18,4 +18,4 @@ I cant check folder existence before I add one and try to rename. If folder alre
 into account bucket. And you need to clear your bucket manualy. I'll try to fix this in the future.
 
 ## Requirements
-* Greasemonkey / Tampermonkey
+* Greasemonkey / Tampermonkey (if you're using firefox 57+)
