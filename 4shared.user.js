@@ -9,6 +9,10 @@
 
 (function fourshared_extention() {
     var addBtn = document.querySelector('.add2myAccountButton');
+    if(!addBtn){
+        return false;
+    }
+
     var itemid = addBtn.getAttribute('itemid');
     var bar = document.querySelector('.d1mainButtons.simpleViewMainButtons .centered.clearFix');
     var folderId = document.querySelector('#jsRootFolderIdForCurrentUser').getAttribute('value');
